@@ -12,8 +12,8 @@ from dataclasses import dataclass, field
 # Setup LangSmith tracing
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_ENDPOINT"] = "https://api.smith.langchain.com"
-os.environ["LANGCHAIN_API_KEY"] = ""  # Replace with your actual API key
-os.environ["LANGCHAIN_PROJECT"] = "llm-mcts-agent"  # Project name in LangSmith
+os.environ["LANGCHAIN_API_KEY"] = "" 
+os.environ["LANGCHAIN_PROJECT"] = "llm-mcts-agent"
 
 @dataclass
 class MCTSNode:
